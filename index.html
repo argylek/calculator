@@ -1,39 +1,40 @@
 <html>
-  <head>
 
-  </head>
-  <body>
-    <!-- numbers -->
-    <div class = "num_grid">
-    <button type="button" class='calc_btn'>1</button>
-    <button type="button" class='calc_btn'>2</button>
-    <button type="button" class='calc_btn'>3</button>
-    <button type="button" class='calc_btn'>4</button>
-    <button type="button" class='calc_btn'>5</button>
-    <button type="button" class='calc_btn'>6</button>
-    <button type="button" class='calc_btn'>7</button>
-    <button type="button" class='calc_btn'>8</button>
-    <button type="button" class='calc_btn'>9</button>
+<head>
+  <link rel="stylesheet" href="calc.css">
+  <title>Attempt at Calculator</title>
+</head>
+
+<body>
+  <div id="grid">
+    <div> User Input:</div>
+    <div id="input">0</div>
+    <div> Total: </div>
+    <div id="return">0</div>
+
+    <button class='calc_btn'>1</button>
+    <button class='calc_btn'>2</button>
+    <button class='calc_btn'>3</button>
+    <button class='calc_btn'>4</button>
+    <button class='calc_btn'>5</button>
+    <button class='calc_btn'>6</button>
+    <button class='calc_btn'>7</button>
+    <button class='calc_btn'>8</button>
+    <button class='calc_btn'>9</button>
+    <button class='op_btn'>+</button>
+    <button class='op_btn'>-</button>
+    <button class='op_btn'>/</button>
+    <button class='op_btn'>*</button>
+    <button class='op_btn'>=</button>
+
   </div>
 
-    <!-- operators -->
-    <div class = "op_column">
-    <button type="button" class='calc_btn'>+</button>
-    <button type="button" class='calc_btn'>-</button>
-    <button type="button" class='calc_btn'>*</button>
-    <button type="button" class='calc_btn'>/</button>
-    <button type="button" class='calc_btn'>=</button>
-    <!-- used to clear the calc -->
-    <button type="button" class='calc_btn'>c</button>
-    </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="calc.js"></script>
+</body>
+<footer>
 
-    <!-- return info -->
-    <div id="input">User Input</div>
-    <div id="return">0</div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="calc.js"></script>
-  </body>
-  <footer>
+</footer>
 
-  </footer>
 </html>

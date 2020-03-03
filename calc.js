@@ -1,27 +1,89 @@
-$(document).ready(function(){
-    var num1 = ''
-    var num2 = ''
-    var operator = ''
-    var total = ''
+$(document).ready(function () {
+  var num1 = ''
+  var num2 = ''
+  var operator = ''
+  var total = ''
 
-    let sysUserInput = $('input')
-    let sysUserReturn = $('return')
+  let sysUserInput = document.getElementById('input')
+  let sysUserReturn = document.getElementById('return')
 
-    $('button').on('click', function(e) {        
-      let btn = e.target.innerHTML;
-      if (btn >= '0' && btn <= '9') {
-        console.log('number');
-      } else {
-        console.log('operator');
-      }
+  function clearCalc(){
+    sysUserInput = "c";
+    sysUserReturn =  "c";
+    num1 = '';
+    num2 = '';
+    operator = '';
+    total = '';
+  }
+
+
+  $('.calc_btn').on('click', function (e) {
+    let btn = e.target.innerHTML;
+    if (btn >= '0' && btn <= '9') {
+      handleNum(btn);
+    
+    // else if (btn = 'c') {
+    //   clearCalc()
+    } else {
+      handleOp(btn);
+    }
   });
-
+  
   function handleNum(num) {
-  };
+    // this will handle all of my number functions
+    if (num1 === '') {
+        num1 = num;
+      } else {
+          num2 = num;
+        }
+        displayButton(num);
+      };
+      
+      function handleOp(op) {
+        // this will handle all of my operator funtions
+        if (operator === ''){
+          operator = op
+        } else
+          handleTotal();
+          operator = op;
+        // console.log(displayButton(op));
+      };
+      
+      function displayButton(btn) {
+        // this will display the button presses as they're happening
+        // debugger
+        sysUserInput.innerHTML = btn
+      }
+      function displayTotal(btn){
+        sysUserReturn.innerHTML = btn
+      }
 
-  function handleOp (operactor) {
-  };
-  
-  
-  
-  });
+    function handleTotal(){
+      switch(operator) {
+        case '+':
+          total = +num1 + +num2;
+          displayTotal(total);
+          break;
+        case '-':
+          total = +num1 - +num2;
+          displayTotal(total);
+          break;
+        case '/':
+          total = +num1 / +num2;
+          displayTotal(total);
+          break;
+        case '*':
+          total = +num1 * +num2;
+          displayTotal(total);
+          break;
+      }
+      updateVars();
+    }
+
+    function updateVars(){
+      num1 = total;
+      num2 = '';
+    }
+
+   
+});

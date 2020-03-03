@@ -1,0 +1,13 @@
+body {
+  background-color: lightgray;
+}
+
+#grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px, 150px, 150px;
+      grid-template-columns: 150px, 150px, 150px;
+  -ms-grid-rows: 150px, 150px, 150px;
+      grid-template-rows: 150px, 150px, 150px;
+}
+/*# sourceMappingURL=calc.css.map */

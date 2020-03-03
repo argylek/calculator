@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACL,gBAAgB,EAAE,SAAS;CAC1B;;AAED,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,mBAAmB;EAC1C,kBAAkB,EAAE,mBAAmB;CACxC",
+    "sources": [
+        "calc.scss"
+    ],
+    "names": [],
+    "file": "calc.css"
+}
