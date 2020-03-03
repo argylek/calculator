@@ -4,28 +4,34 @@
   </head>
   <body>
     <!-- numbers -->
-    <button type="button" class='button'>1</button>
-    <button type="button" type="button" class='button'>2</button>
-    <button type="button" class='button'>3</button>
-    <button type="button" class='button'>4</button>
-    <button type="button" class='button'>5</button>
-    <button type="button" class='button'>6</button>
-    <button type="button" class='button'>7</button>
-    <button type="button" class='button'>8</button>
-    <button type="button" class='button'>9</button>
+    <div class = "num_grid">
+    <button type="button" class='calc_btn'>1</button>
+    <button type="button" class='calc_btn'>2</button>
+    <button type="button" class='calc_btn'>3</button>
+    <button type="button" class='calc_btn'>4</button>
+    <button type="button" class='calc_btn'>5</button>
+    <button type="button" class='calc_btn'>6</button>
+    <button type="button" class='calc_btn'>7</button>
+    <button type="button" class='calc_btn'>8</button>
+    <button type="button" class='calc_btn'>9</button>
+  </div>
 
     <!-- operators -->
-    <button type="button" class='button'>+</button>
-    <button type="button" class='button'>-</button>
-    <button type="button" class='button'>*</button>
-    <button type="button" class='button'>/</button>
-    <button type="button" class='button'>=</button>
+    <div class = "op_column">
+    <button type="button" class='calc_btn'>+</button>
+    <button type="button" class='calc_btn'>-</button>
+    <button type="button" class='calc_btn'>*</button>
+    <button type="button" class='calc_btn'>/</button>
+    <button type="button" class='calc_btn'>=</button>
     <!-- used to clear the calc -->
-    <button type="button" class='button'>c</button>
+    <button type="button" class='calc_btn'>c</button>
+    </div>
 
     <!-- return info -->
     <div id="input">User Input</div>
     <div id="return">0</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="calc.js"></script>
   </body>
   <footer>
 
