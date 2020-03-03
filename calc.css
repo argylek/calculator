@@ -1,13 +1,13 @@
-body {
-  background-color: lightgray;
-}
+html {
+  margin: 100px;
 
-#grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 150px, 150px, 150px;
-      grid-template-columns: 150px, 150px, 150px;
-  -ms-grid-rows: 150px, 150px, 150px;
-      grid-template-rows: 150px, 150px, 150px;
+  background-color: darkblue;
 }
-/*# sourceMappingURL=calc.css.map */
+body {
+  background-color: inherit;
+}
+.calc_container {
+  border-radius: 5px;
+  background-color: darkgray;
+  width: 300px;
+}

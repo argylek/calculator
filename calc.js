@@ -6,6 +6,7 @@ $(document).ready(function () {
 
   let sysUserInput = document.getElementById('input')
   let sysUserReturn = document.getElementById('return')
+  let sysOpReturn = document.getElementById('operator')
 
   function clearCalc(){
     sysUserInput = "c";
@@ -21,9 +22,6 @@ $(document).ready(function () {
     let btn = e.target.innerHTML;
     if (btn >= '0' && btn <= '9') {
       handleNum(btn);
-    
-    // else if (btn = 'c') {
-    //   clearCalc()
     } else {
       handleOp(btn);
     }
@@ -47,6 +45,7 @@ $(document).ready(function () {
           handleTotal();
           operator = op;
         // console.log(displayButton(op));
+
       };
       
       function displayButton(btn) {

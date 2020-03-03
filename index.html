@@ -3,29 +3,47 @@
 <head>
   <link rel="stylesheet" href="calc.css">
   <title>Attempt at Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
 </head>
 
 <body>
-  <div id="grid">
-    <div> User Input:</div>
-    <div id="input">0</div>
-    <div> Total: </div>
-    <div id="return">0</div>
-
-    <button class='calc_btn'>1</button>
-    <button class='calc_btn'>2</button>
-    <button class='calc_btn'>3</button>
-    <button class='calc_btn'>4</button>
-    <button class='calc_btn'>5</button>
-    <button class='calc_btn'>6</button>
-    <button class='calc_btn'>7</button>
-    <button class='calc_btn'>8</button>
-    <button class='calc_btn'>9</button>
-    <button class='op_btn'>+</button>
-    <button class='op_btn'>-</button>
-    <button class='op_btn'>/</button>
-    <button class='op_btn'>*</button>
-    <button class='op_btn'>=</button>
+  <div class="ui four column grid calc_container">
+    <div class = row>
+      <div class="column"> 
+        User Input:
+        <div id="input">
+        </div>
+      </div>
+    <div class="column"> 
+      Total: 
+      <div id="return">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <button class='calc_btn ui green button'>1</button>
+    <button class='calc_btn ui blue button'>2</button>
+    <button class='calc_btn ui red button'>3</button>
+  </div>
+  <div class="row">
+    <button class='calc_btn ui red button'>4</button>
+    <button class='calc_btn ui green button'>5</button>
+    <button class='calc_btn ui blue button'>6</button>
+  </div>
+  <div class="row">
+    <button class='calc_btn ui blue button'>7</button>
+    <button class='calc_btn ui red button'>8</button>
+    <button class='calc_btn ui green button'>9</button>
+  </div>
+  <div class="row">
+    <button class='ui orange button calc_btn'>+</button>
+    <button class='ui orange button calc_btn'>-</button>
+    <button class='ui orange button calc_btn'>/</button>
+    <button class='ui orange button calc_btn '>*</button>
+    <button class='ui purple button calc_btn '>=</button>
+  </div>
 
   </div>
 
